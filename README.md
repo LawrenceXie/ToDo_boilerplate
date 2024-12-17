@@ -23,3 +23,8 @@ For local development
 `npm run dev`
 
 ## Deployment
+Under /front, `npm run build`
+This will generate the /dist folder including the index.html, .js, .css
+
+Copy this to the backend under /backend/backend_app/static/
+Django will then serve this at the base domain

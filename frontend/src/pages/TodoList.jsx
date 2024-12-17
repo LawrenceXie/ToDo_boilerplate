@@ -92,7 +92,7 @@ function ToDoList() {
     <div className="min-h-screen bg-gray-100 p-4">
       <div className="max-w-2xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-semibold">My To-Do List</h1>
+          <h1 className="text-3xl font-semibold">{authData.username}'s to do list</h1>
           <button onClick={logout} className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
             Logout
           </button>
