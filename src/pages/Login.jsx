@@ -24,7 +24,7 @@ function Login() {
       setAuthData(authInfo);
       
       
-      navigate('/');
+      navigate('/app');
     } catch (error) {
       setError('Invalid credentials. Please try again.');
     }
