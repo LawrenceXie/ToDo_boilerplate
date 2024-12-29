@@ -14,10 +14,14 @@ Install Python packages
 Initialize the database
 `python manage.py migrate`
 
+
 ## Frontend setup
 `npm install`
 or
 `yarn install`
+
+Create a .env pointing to the backend in the /frontend directory
+`VITE_API_URL = 'http://localhost:8000/api/'`
 
 For local development
 `npm run dev`
@@ -26,5 +30,5 @@ For local development
 Under /front, `npm run build`
 This will generate the /dist folder including the index.html, .js, .css
 
-Copy this to the backend under /backend/backend_app/static/
+Copy this to the backend under /backend/backend_app/static/ so that the full path to the js will be /backend/backend_app/static/dist/assets/index.js.
 Django will then serve this at the base domain
