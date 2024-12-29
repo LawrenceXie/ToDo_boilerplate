@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 const API = axios.create({
-  baseURL: 'http://localhost:8000/api/',
+  baseURL: apiUrl
 });
 
 export const signup = (username, password) => API.post('users/', { username, password });
